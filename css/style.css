@@ -30,7 +30,6 @@ body{
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    margin-bottom: 20px;
 }
 .header__logo img{
     width: 100px;
