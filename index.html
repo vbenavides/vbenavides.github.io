@@ -6,17 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vicente Benavides</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous">
+    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+	    $( document ).ready(function() {
+            $('.menu-btn__on').click(function(){ // Al hacer click...
+                $('.menu-btn').toggleClass('visible_menu'); // Añadimos o eliminamos la clase 'visible_menu' al body
+                $('.header__menu').toggleClass('header__menu-visible');
+		    });
+
+            $('.header__menu a').click(function(){
+                $('.header__menu').toggleClass('header__menu-visible');
+                $('.menu-btn').toggleClass('visible_menu');
+            })
+            // $('.header__logo-title').click(function() {
+            //     // $('.menu-btn').toggleClass('visible_menu');
+            //     $('.header__menu').toggleClass('header__menu-visible');
+            // })
+	    });
+    </script>
 </head>
 <body>
     <header class="header">
         <div class="header__container">
             <div class="header__logo">
                 <img class="header__logo-img" src="./assets/imgs/vbenavides.jpg" alt="">
-                <p class="header__logo-title"><a href="#about-me"> WEB DEVELOPER</a></p>
+                <p class="header__logo-title"> WEB DEVELOPER</p>
+                <div class="menu-btn">
+                    <a href="#" class="menu-btn__on">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
             </div>
-            <span class="language">
-                
-            </span>
             <ul class="header__menu">
                 <li class="header__menu-link">
                     <a href="#about-me">ABOUT ME</a>
@@ -30,6 +56,11 @@
                 <li class="header__menu-link">
                     <a href="#contact">CONTACT</a>
                 </li>
+                <div class="network__visible-menu">
+                    <a href="https://github.com/vbenavides" target="_blank"><img src="./assets/icons/github.png" alt="a"></a>
+                    <a href="https://www.linkedin.com/in/vicentebenavides/" target="_blank"><img src="./assets/icons/linkedin.png" alt="a"></a>
+                    <a href="https://twitter.com/vbenavides05" target="_blank"><img src="./assets/icons/twitter.png" alt="a"></a>
+                </div>
             </ul>
             <div class="network">
                 <a href="https://github.com/vbenavides" target="_blank"><img src="./assets/icons/github.png" alt="a"></a>
