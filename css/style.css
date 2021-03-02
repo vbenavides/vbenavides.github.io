@@ -109,11 +109,11 @@ body{
     padding: 0 5%;
 }
 .about-me {
-    padding-top: 5%;
+    padding-top: 10%;
     width: 100%;
     max-width: 1080px;
     /* padding: 0 auto; */
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
 }
 .about-me__container-header{
     display: flex;
@@ -134,6 +134,7 @@ body{
     font-family: sans-serif;
     font-size: 2.6rem;
     width: 400px;
+    margin: 5% auto 0 auto;
 }
 
 .download-cv{
@@ -144,7 +145,7 @@ body{
     height: 6rem;
     text-decoration: none;
     background-color: rebeccapurple;
-    margin: 10rem auto 10rem auto;
+    margin: 7rem auto;
 }
 .download-cv span{
     font-size: 2rem;
@@ -245,6 +246,7 @@ body{
     body {
         display: flex;
         flex-direction: column;
+
     }
     .header {
         display: flex;
@@ -277,6 +279,9 @@ body{
         /* align-items: center; */
 
     }
+    .header__logo-title {
+        font-size: 2.5rem;
+    }
     .header__logo-img {
         width: 19%;
         margin: 0;
@@ -297,8 +302,8 @@ body{
     .menu-btn{
         display: flex;
         align-items: center;
-        /* width: 50px;
-        height: 50px; */
+        width: 19%;
+        justify-content: center;
     }
 
     .menu-btn__on {
@@ -353,10 +358,14 @@ body{
         font-size: 1.2em;
         overflow-y: auto;
     }
+    .header__menu a{
+        font-size: 2rem;
+        font-weight: bolder;
+    }
     .header__menu-visible {
         /* position: inherit; */
         left: 0;
-        opacity: 0.9;
+        opacity: 1;
     }
     /* .visible_menu .content{
         transform: translateX(260px);
@@ -378,7 +387,7 @@ body{
         padding: 12rem 0 0 0;
     }
     .contact {
-        padding: 12rem 0 0 0;
+        padding: 12rem 0;
     }
 
     .network{
